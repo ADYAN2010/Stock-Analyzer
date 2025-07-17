@@ -1,11 +1,7 @@
 module.exports = {
-  // List of stock codes to monitor
-  stocks: ['ACI', 'SQURPHARMA', 'GP', 'BRACBANK'],
-
-  // Frequency in minutes to check stock data
+  stocks: ['ACI', 'SQURPHARMA', 'GP', 'BRACBANK'], // add stock codes you want to track
   frequencyMinutes: 2,
 
-  // Discord config reads from Render environment variables
   discord: {
     enabled: true,
     token: process.env.DISCORD_TOKEN,
@@ -13,14 +9,12 @@ module.exports = {
     channelId: process.env.DISCORD_CHANNEL_ID
   },
 
-  // Telegram (disabled)
   telegram: {
     enabled: false,
     token: '',
     chatId: ''
   },
 
-  // OpenAI (disabled)
   openai: {
     enabled: false,
     apiKey: '',
